@@ -9,6 +9,29 @@ async def start(client, message):
         [InlineKeyboardButton(
             "Report Bugs 😊", url="https://t.me/aryanvikash")]
     ])
-    welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/help for More info"
+    welcomed = f"Hey <b>{message.from_user.first_name}</b>\n
+   >>> import datetime
+
+>>> currentTime = datetime.datetime.now()
+
+>>> currentTime.hour
+
+0
+
+>>> if currentTime.hour < 12:
+
+...     print('Good morning.')
+
+... elif 12 <= currentTime.hour < 18:
+
+...     print('Good afternoon.')
+
+... else:
+
+...     print('Good evening.')
+
+...
+
+Good morning. /help for More info"
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
